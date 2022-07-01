@@ -1,0 +1,32 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  background-color: #171717;
+  font-family: Inter, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.videoContainer {
+  position: relative;
+  height: 100%;
+  background-color: #171717;
+}
+
+.video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: auto;
+  bottom: 64px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 4vw;
+  margin-right: 64px;
+  margin-left: 64px;
+}

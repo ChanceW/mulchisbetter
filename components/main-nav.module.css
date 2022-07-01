@@ -1,0 +1,28 @@
+.nav {
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  display: flex;
+  width: 100%;
+  color: #fff;
+  padding-right: 64px;
+  padding-left: 64px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.link {
+  line-height: 80px;
+  font-family: "Space Grotesk", sans-serif;
+  text-decoration: none;
+  padding: 0 40px;
+  font-size: 22px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.link:hover,
+.link:visited,
+.link:active .li {
+  color: #c5c5c5;
+  text-decoration: underline;
+}

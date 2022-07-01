@@ -1,0 +1,84 @@
+.productsView {
+  background: #251a10;
+  position: relative;
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.title {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 72px;
+  margin-bottom: 25px;
+}
+
+.productTitle {
+  font-family: "Anek Malayalam", sans-serif;
+}
+
+.productList {
+  text-align: center;
+  display: flex;
+  margin: 0 65px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.productImg {
+  height: 100%;
+  border-radius: 25px;
+}
+
+.productCard {
+  width: 500px;
+  margin: 25px;
+  background: rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  border: transparent solid 2px;
+  border-radius: 25px;
+}
+
+.productCard:hover,
+.productCard.selected {
+  background: rgba(210, 180, 140, 0.35);
+  border: rgba(210, 180, 140, 0.35) solid 2px;
+}
+
+.purchaseInput {
+  transition: height 0.5s;
+  position: absolute;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  height: 0;
+}
+
+.productCard.selected .purchaseInput {
+  visibility: visible;
+  height: 70%;
+  bottom: 0;
+}
+
+.input {
+  text-align: center;
+  border-radius: 50px;
+  padding: 10px;
+  width: 200px;
+  margin: auto;
+  border: 2px solid #61503b;
+}
+
+.button {
+  margin-top: 10px;
+  background: #61503b;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.button:hover {
+  margin-top: 10px;
+  background: #fff;
+  color: #61503b;
+  border: 2px solid #61503b;
+}

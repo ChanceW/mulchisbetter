@@ -17,10 +17,10 @@
 }
 
 .productList {
-  text-align: center;
+  justify-content: center;
   display: flex;
-  margin: 0 65px;
   font-family: "Open Sans", sans-serif;
+  flex-wrap: wrap;
 }
 
 .productImg {
@@ -29,7 +29,7 @@
 }
 
 .productCard {
-  width: 500px;
+  width: 400px;
   margin: 25px;
   background: rgba(0, 0, 0, 0.35);
   cursor: pointer;
@@ -54,7 +54,7 @@
 
 .productCard.selected .purchaseInput {
   visibility: visible;
-  height: 70%;
+  height: 60%;
   bottom: 0;
 }
 
@@ -68,12 +68,12 @@
 }
 
 .button {
-  margin-top: 10px;
   background: #61503b;
   color: #fff;
   border: 2px solid #fff;
   border-radius: 25px;
-  padding: 10px;
+  padding: 10px 15px;
+  margin: 10px;
 }
 
 .button:hover {

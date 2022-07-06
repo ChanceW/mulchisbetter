@@ -1,10 +1,9 @@
 import Head from "next/head";
-import Layout from "../components/layout";
 import "bootstrap/dist/css/bootstrap.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
+    <div>
       <Head>
         <title>Mulch Is Better</title>
         <meta name="description" content="Mulch Delivery" />
@@ -34,9 +33,13 @@ function MyApp({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Anek+Malayalam&display=swap"
           rel="stylesheet"
         ></link>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+        />
       </Head>
       <Component {...pageProps} />
-    </Layout>
+    </div>
   );
 }
 

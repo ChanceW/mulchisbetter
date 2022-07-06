@@ -28,7 +28,7 @@ export const ProductsView = () => {
   return (
     <div id="Products" className={classes.productsView}>
       <div className={classes.title}>Our Mulch</div>
-      <div className={classes.productList}>
+      <div className={`${classes.productList}`}>
         {state.products.map((product) => {
           return (
             <Card
@@ -52,11 +52,9 @@ export const ProductsView = () => {
                 </CardTitle>
               </CardBody>
               <div className={classes.purchaseInput}>
-                <Input
-                  className={classes.input}
-                  placeholder="Enter Amount by SqFt"
-                  type="number"
-                />
+                <Button color="info" className={`${classes.button} mr-2`}>
+                  Preview
+                </Button>
                 <Button color="info" className={classes.button}>
                   Purchase
                 </Button>

@@ -4,7 +4,10 @@ function MainHero(props) {
   return (
     <div className={classes.hero}>
       <video className={classes.video} autoPlay={true} muted loop>
-        <source src="video/landscape.mp4" type="video/mp4" />
+        <source
+          src="https://elasticbeanstalk-us-east-2-114778925296.s3.us-east-2.amazonaws.com/resources/MulchIsBetter.mp4"
+          type="video/mp4"
+        />
       </video>
       <div className={classes.caption}>
         High quality mulch products

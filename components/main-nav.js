@@ -7,7 +7,7 @@ function MainNav() {
         About
       </a>
       <a className={classes.link} href="#Products">
-        Order
+        Choose Color
       </a>
       <a className={classes.link} href="#">
         What To Expect

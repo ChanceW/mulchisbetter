@@ -45,12 +45,9 @@ const reducer = (state, action) => {
 export const ProductsView = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  const closeModal = () => {
-    dispatch({ type: "openOrder", value: false });
-  };
   return (
     <div id="Products" className={classes.productsView}>
-      <div className={classes.title}>Our Mulch</div>
+      <div className={classes.title}>Choose Color</div>
       <div className={`${classes.productList}`}>
         {state.products.map((product) => {
           return (

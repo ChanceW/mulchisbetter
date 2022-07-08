@@ -1,6 +1,5 @@
 import { useReducer } from "react";
 import { Button, Card, CardBody, CardImg, CardTitle, Input } from "reactstrap";
-import { OrderForm } from "./modal/orderForm";
 import classes from "./productsView.module.css";
 
 const products = [
@@ -93,9 +92,6 @@ export const ProductsView = () => {
           );
         })}
       </div>
-      {state.openOrder && (
-        <OrderForm close={closeModal} product={getProduct(state.selectedId)} />
-      )}
     </div>
   );
 };

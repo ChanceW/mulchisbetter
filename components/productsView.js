@@ -1,13 +1,31 @@
 import { useReducer } from "react";
 import { Button, Card, CardBody, CardImg, CardTitle, Input } from "reactstrap";
+import { OrderForm } from "./modal/orderForm";
 import classes from "./productsView.module.css";
 
 const products = [
-  { id: 1, name: "Black", img: "img/black-mulch.jpg" },
-  { id: 2, name: "Brown", img: "img/brown-mulch.jpg" },
-  { id: 3, name: "Red", img: "img/red-mulch.jpg" },
-  { id: 4, name: "Natural HardWood", img: "img/wood-mulch.jpg" },
+  {
+    id: 1,
+    name: "Black",
+    img: "img/black-mulch.jpg",
+    price: 15.0,
+    checkoutLink:
+      "https://checkout.square.site/merchant/MLQNHB0PE667N/checkout/CWZPXSDSHPFATZ45IUD6U3BZ",
+  },
+  { id: 2, name: "Brown", img: "img/brown-mulch.jpg", price: 15.0 },
+  {
+    id: 3,
+    name: "Red",
+    img: "img/red-mulch.jpg",
+    checkoutLink: "https://square.link/u/NAfpzk51",
+    price: 15.0,
+  },
+  { id: 4, name: "Natural HardWood", img: "img/wood-mulch.jpg", price: 15.0 },
 ];
+
+const getProduct = (id) => {
+  return products.find((p) => p.id === id);
+};
 
 const initialState = {
   selectedId: 0,
@@ -18,6 +36,8 @@ const reducer = (state, action) => {
   switch (action.type) {
     case "select":
       return { ...state, selectedId: action.value };
+    case "openOrder":
+      return { ...state, openOrder: action.value };
     default:
       throw new Error();
   }
@@ -25,6 +45,10 @@ const reducer = (state, action) => {
 
 export const ProductsView = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
+
+  const closeModal = () => {
+    dispatch({ type: "openOrder", value: false });
+  };
   return (
     <div id="Products" className={classes.productsView}>
       <div className={classes.title}>Our Mulch</div>
@@ -52,10 +76,16 @@ export const ProductsView = () => {
                 </CardTitle>
               </CardBody>
               <div className={classes.purchaseInput}>
-                <Button color="info" className={`${classes.button} mr-2`}>
-                  Preview
-                </Button>
-                <Button color="info" className={classes.button}>
+                <Button
+                  color="info"
+                  className={classes.button}
+                  onClick={() => {
+                    window.open(
+                      getProduct(state.selectedId).checkoutLink,
+                      "_blank"
+                    );
+                  }}
+                >
                   Purchase
                 </Button>
               </div>
@@ -63,6 +93,9 @@ export const ProductsView = () => {
           );
         })}
       </div>
+      {state.openOrder && (
+        <OrderForm close={closeModal} product={getProduct(state.selectedId)} />
+      )}
     </div>
   );
 };

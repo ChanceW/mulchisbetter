@@ -16,7 +16,7 @@ export default function Document() {
         ></link>
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700%7CInter:100,200,300,regular,500,600,700,800,900"
+          href="https://fonts.googleapis.com/css?family=Space+Grotesk:300,regular,500,600,700%7CInter:100,200,300,regular,500,600,700,800,900&display=optional"
           media="all"
         ></link>
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>

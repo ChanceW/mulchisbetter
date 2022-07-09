@@ -2,7 +2,7 @@ import classes from "./main-nav.module.css";
 
 function MainNav() {
   return (
-    <div className={classes.nav}>
+    <div className={`${classes.nav} d-none d-md-block`}>
       <a className={classes.link} href="#">
         About
       </a>

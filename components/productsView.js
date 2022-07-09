@@ -6,12 +6,17 @@ const products = [
   {
     id: 1,
     name: "Black",
-    img: "img/black-mulch.jpg",
+    img: "https://elasticbeanstalk-us-east-2-114778925296.s3.us-east-2.amazonaws.com/resources/Mulch/Black/DJI_0052.JPG",
     price: 15.0,
     checkoutLink:
       "https://checkout.square.site/merchant/MLQNHB0PE667N/checkout/CWZPXSDSHPFATZ45IUD6U3BZ",
   },
-  { id: 2, name: "Brown", img: "img/brown-mulch.jpg", price: 15.0 },
+  {
+    id: 2,
+    name: "Brown",
+    img: "https://elasticbeanstalk-us-east-2-114778925296.s3.us-east-2.amazonaws.com/resources/Mulch/Brown/DSCF3308.JPG",
+    price: 15.0,
+  },
   {
     id: 3,
     name: "Red",

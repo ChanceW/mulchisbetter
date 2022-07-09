@@ -5,7 +5,7 @@ function MainNav() {
   return (
     <div className={`${classes.nav}`}>
       <span className={classes.logo}>
-        <Image src="/img/logo.png" width={200} height={30} />
+        <Image alt="logo" src="/img/logo.png" width={200} height={30} />
       </span>
       <span className="d-none d-md-block">
         <a className={classes.link} href="#">

@@ -10,6 +10,11 @@
   background-color: rgba(0, 0, 0, 0.75);
 }
 
+.logo {
+  display: flex;
+  padding: 20px 0;
+}
+
 .link {
   line-height: 80px;
   font-family: "Space Grotesk", sans-serif;
@@ -25,4 +30,10 @@
 .link:active .li {
   color: #c5c5c5;
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    padding: 5px;
+  }
 }

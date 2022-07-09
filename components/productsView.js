@@ -68,7 +68,8 @@ export const ProductsView = () => {
               <CardImg
                 alt={`${product.name} Mulch`}
                 src={product.img}
-                width="100%"
+                width="300px"
+                height="170"
                 className={classes.productImg}
               />
               <CardBody>

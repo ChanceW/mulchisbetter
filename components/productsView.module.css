@@ -7,19 +7,17 @@
 }
 
 .title {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--space_font);
   font-size: 72px;
   margin-bottom: 25px;
 }
 
 .productTitle {
-  font-family: "Anek Malayalam", sans-serif;
 }
 
 .productList {
   justify-content: center;
   display: flex;
-  font-family: "Open Sans", sans-serif;
   flex-wrap: wrap;
 }
 

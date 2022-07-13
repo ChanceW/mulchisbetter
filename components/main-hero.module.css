@@ -26,10 +26,10 @@
   top: auto;
   bottom: 64px;
   font-family: "Space Grotesk", sans-serif;
-  font-size: 4vw;
+  font-size: 3vw;
   margin-right: 64px;
   margin-left: 64px;
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: var(--trans_black);
   padding: 20px 15px;
   border-radius: 25px;
 }

@@ -7,7 +7,7 @@ export const ImgCarousel = ({ imgs }) => {
       src: item,
       altText: `Slide ${idx + 1}`,
       caption: `Slide ${idx + 1}`,
-      header: `Slide ${idx + 1} Header`,
+      header: " ",
     };
   });
 

@@ -1,7 +1,11 @@
-.carousel {
+.imgModal :global .modal-content {
+  background-color: var(--mib_blue);
+  color: var(--mib_blue_gray);
+  max-height: 80vh;
+  border: var(--mib_blue_gray) solid 4px;
+  border-radius: 25px;
 }
 
 .carousel img {
-  height: 400px;
-  width: fit-content;
+  max-height: 50vh;
 }

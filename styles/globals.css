@@ -1,10 +1,14 @@
 :root {
+  /* Colors */
   --mib_blue: #bfd9d7;
   --mib_blue_gray: #353745;
   --mib_gold: #ae9152;
   --trans_black: rgba(0, 0, 0, 0.43);
   --trans_mib_gold: rgba(174, 145, 82, 0.35);
   --trans_mib_blue: rgba(191, 217, 215, 0.35);
+
+  /* Fonts */
+  --space_font: "Space Grotesk", sans-serif;
 }
 
 html,

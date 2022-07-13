@@ -1,47 +1,26 @@
 import { useReducer } from "react";
-import { Button, Card, CardBody, CardImg, CardTitle, Input } from "reactstrap";
+import { Button, Card, CardBody, CardImg, CardTitle } from "reactstrap";
+import { Data } from "../data";
+import { ImgCarouselModal } from "./modal/img-carousel-modal";
 import classes from "./productsView.module.css";
-
-const products = [
-  {
-    id: 1,
-    name: "Black",
-    img: "https://elasticbeanstalk-us-east-2-114778925296.s3.us-east-2.amazonaws.com/resources/Mulch/Black/DJI_0052.JPG",
-    price: 15.0,
-    checkoutLink:
-      "https://checkout.square.site/merchant/MLQNHB0PE667N/checkout/CWZPXSDSHPFATZ45IUD6U3BZ",
-  },
-  {
-    id: 2,
-    name: "Brown",
-    img: "https://elasticbeanstalk-us-east-2-114778925296.s3.us-east-2.amazonaws.com/resources/Mulch/Brown/DSCF3308.JPG",
-    price: 15.0,
-  },
-  {
-    id: 3,
-    name: "Red",
-    img: "img/red-mulch.jpg",
-    checkoutLink: "https://square.link/u/NAfpzk51",
-    price: 15.0,
-  },
-  { id: 4, name: "Natural HardWood", img: "img/wood-mulch.jpg", price: 15.0 },
-];
+import { ArrowsAngleExpand, CurrencyDollar } from "react-bootstrap-icons";
 
 const getProduct = (id) => {
-  return products.find((p) => p.id === id);
+  return Data.products.find((p) => p.id === id);
 };
 
 const initialState = {
   selectedId: 0,
-  products: products,
+  products: Data.products,
+  isPreview: false,
 };
 
 const reducer = (state, action) => {
   switch (action.type) {
     case "select":
       return { ...state, selectedId: action.value };
-    case "openOrder":
-      return { ...state, openOrder: action.value };
+    case "togglePreview":
+      return { ...state, isPreview: action.value };
     default:
       throw new Error();
   }
@@ -49,12 +28,22 @@ const reducer = (state, action) => {
 
 export const ProductsView = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const openPreview = () => {
+    dispatch({ type: "togglePreview", value: true });
+  };
+  const closePreview = () => {
+    dispatch({ type: "togglePreview", value: false });
+  };
 
   return (
     <div id="Products" className={classes.productsView}>
-      <div className={classes.title}>Choose Color</div>
+      <div className={classes.title}>Choose Your Color</div>
       <div className={`${classes.productList}`}>
         {state.products.map((product) => {
+          const purchase = () => {
+            window.open(getProduct(state.selectedId).checkoutLink, "_blank");
+          };
+
           return (
             <Card
               key={product.id}
@@ -67,7 +56,7 @@ export const ProductsView = () => {
             >
               <CardImg
                 alt={`${product.name} Mulch`}
-                src={product.img}
+                src={product.imgs.find((i) => true)}
                 className={classes.productImg}
               />
               <CardBody>
@@ -79,20 +68,31 @@ export const ProductsView = () => {
                 <Button
                   color="info"
                   className={classes.button}
-                  onClick={() => {
-                    window.open(
-                      getProduct(state.selectedId).checkoutLink,
-                      "_blank"
-                    );
-                  }}
+                  onClick={openPreview}
+                  title="Preview"
                 >
-                  Purchase
+                  <ArrowsAngleExpand />
+                </Button>
+                <Button
+                  color="info"
+                  className={classes.button}
+                  onClick={purchase}
+                  title="Purchase"
+                >
+                  <CurrencyDollar />
                 </Button>
               </div>
             </Card>
           );
         })}
       </div>
+
+      {state.isPreview && (
+        <ImgCarouselModal
+          product={getProduct(state.selectedId)}
+          close={closePreview}
+        />
+      )}
     </div>
   );
 };

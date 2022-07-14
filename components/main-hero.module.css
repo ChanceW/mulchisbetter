@@ -25,7 +25,7 @@
   left: 0;
   top: auto;
   bottom: 64px;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: var(--space_font);
   font-size: 3vw;
   margin-right: 64px;
   margin-left: 64px;

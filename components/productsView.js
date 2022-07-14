@@ -3,7 +3,7 @@ import { Button, Card, CardBody, CardImg, CardTitle } from "reactstrap";
 import { Data } from "../data";
 import { ImgCarouselModal } from "./modal/img-carousel-modal";
 import classes from "./productsView.module.css";
-import { ArrowsAngleExpand, CurrencyDollar } from "react-bootstrap-icons";
+import { Images, CurrencyDollar } from "react-bootstrap-icons";
 
 const getProduct = (id) => {
   return Data.products.find((p) => p.id === id);
@@ -71,7 +71,7 @@ export const ProductsView = () => {
                   onClick={openPreview}
                   title="Preview"
                 >
-                  <ArrowsAngleExpand />
+                  <Images size="25" />
                 </Button>
                 <Button
                   color="info"
@@ -79,7 +79,7 @@ export const ProductsView = () => {
                   onClick={purchase}
                   title="Purchase"
                 >
-                  <CurrencyDollar />
+                  <CurrencyDollar size="25" />
                 </Button>
               </div>
             </Card>

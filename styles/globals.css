@@ -34,3 +34,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+body.modal-open {
+  overflow: visible !important;
+  padding-right: 0 !important;
+}

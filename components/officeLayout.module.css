@@ -1,15 +1,23 @@
 .sideNav {
   height: 100%;
-  width: 160px;
+  width: 225px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #61503b;
+  background-color: var(--mib_blue);
   overflow-x: hidden;
-  padding-top: 20px;
-  color: #f1f1f1;
+  color: var(--mib_charcoal);
   cursor: pointer;
+}
+
+.logoLink {
+  background-color: var(--mib_charcoal);
+  border-bottom: var(--mib_gold) 2px solid;
+}
+
+.logoLink img {
+  width: 200px;
 }
 
 .sideNav a {
@@ -17,17 +25,18 @@
   text-decoration: none;
   font-size: 25px;
   display: block;
-  color: #f1f1f1;
+  color: var(--mib_charcoal);
   font-family: "Anek Malayalam", sans-serif;
 }
 
 .sideNav a:hover {
-  background: #251a10;
+  color: white;
+  background: var(--mib_charcoal);
 }
 
 .main {
   font-size: 28px;
-  padding: 40px 40px 0 200px;
+  padding: 40px 40px 0 260px;
   position: fixed;
   top: 0;
   bottom: 0;

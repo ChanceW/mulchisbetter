@@ -1,8 +1,10 @@
 :root {
   /* Colors */
   --mib_blue: #bfd9d7;
-  --mib_blue_gray: #353745;
+  --mib_charcoal: #353745;
   --mib_gold: #ae9152;
+  --mib_blue_gray: #d3dbe5;
+
   --trans_black: rgba(0, 0, 0, 0.43);
   --trans_mib_gold: rgba(174, 145, 82, 0.35);
   --trans_mib_blue: rgba(191, 217, 215, 0.35);
@@ -17,13 +19,11 @@ body {
   min-height: 100%;
   height: 100%;
   min-width: 320px;
-  background-color: #000;
   font-family: Inter, sans-serif;
-  color: #fff;
+  color: var(--mib_charcoal);
   font-size: 16px;
   line-height: 1;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--space_font);
 }
 
 a {
@@ -38,4 +38,47 @@ a {
 body.modal-open {
   overflow: visible !important;
   padding-right: 0 !important;
+}
+
+/* Plugins */
+
+/* Data-Grid */
+.rdg {
+  border: solid var(--mib_charcoal) 2px;
+}
+
+.rdg-header-row {
+  background-color: var(--mib_gold);
+  cursor: pointer;
+}
+
+.rdg-row:hover {
+  background-color: var(--mib_gold);
+  cursor: pointer;
+}
+
+.rdg-row-odd {
+  background-color: var(--mib_blue_gray);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--mib_gold);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mib_charcoal);
 }

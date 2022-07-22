@@ -1,3 +1,4 @@
+import Image from "next/image";
 import classes from "./main-nav.module.css";
 
 function MainNav() {
@@ -6,14 +7,14 @@ function MainNav() {
       <span className={classes.logo}>
         <img alt="logo" src="/img/Logo/Vector/Original.svg" />
       </span>
-      <span className="d-none d-md-block">
+      <span className="d-none d-xl-block">
         <a className={classes.link} href="#">
           About
         </a>
         <a className={classes.link} href="#Products">
           Choose Your Color
         </a>
-        <a className={classes.link} href="#">
+        <a className={classes.link} href="#Expect">
           What To Expect
         </a>
       </span>

@@ -17,10 +17,10 @@ const getOrders = async () => {
     },
   });
 
-  console.log(response.result);
+  return response.result.orders[0];
 };
 
-export default function handler(req, res) {
-  getOrders();
-  res.status(200).json({ name: "John Doe" });
+export default async function handler(req, res) {
+  const o = await getOrders();
+  res.status(200).json({ id: o.customerId });
 }

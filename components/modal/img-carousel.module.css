@@ -1,7 +1,7 @@
 .imgModal :global .modal-content {
   background-color: var(--mib_blue);
-  color: var(--mib_blue_gray);
-  border: var(--mib_blue_gray) solid 4px;
+  color: var(--mib_charcoal);
+  border: var(--mib_charcoal) solid 4px;
   border-radius: 25px;
   display: flex;
 }
@@ -11,8 +11,8 @@
 .modalBtn:visited,
 .modalBtn:focus {
   background: var(--mib_gold);
-  color: var(--mib_blue_gray);
-  border: 2px solid var(--mib_blue_gray);
+  color: var(--mib_charcoal);
+  border: 2px solid var(--mib_charcoal);
   border-radius: 25px;
   padding: 10px 15px;
   margin: 15px 25px;
@@ -20,7 +20,7 @@
 
 .modalBtn:hover {
   margin-top: 15px;
-  background: var(--mib_blue_gray);
+  background: var(--mib_charcoal);
   color: var(--mib_gold);
   border: 2px solid var(--mib_gold);
 }

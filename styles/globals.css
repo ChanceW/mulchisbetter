@@ -8,6 +8,7 @@
   --trans_black: rgba(0, 0, 0, 0.43);
   --trans_mib_gold: rgba(174, 145, 82, 0.35);
   --trans_mib_blue: rgba(191, 217, 215, 0.35);
+  --trans_mib_charcoal: rgba(53, 55, 69, 0.35);
 
   /* Fonts */
   --space_font: "Space Grotesk", sans-serif;
@@ -44,7 +45,8 @@ body.modal-open {
 
 /* Data-Grid */
 .rdg {
-  border: solid var(--mib_charcoal) 2px;
+  border: solid var(--mib_charcoal) 4px;
+  border-style: outset;
 }
 
 .rdg-header-row {
@@ -53,7 +55,7 @@ body.modal-open {
 }
 
 .rdg-row:hover {
-  background-color: var(--mib_gold);
+  background-color: var(--trans_mib_gold);
   cursor: pointer;
 }
 

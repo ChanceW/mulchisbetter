@@ -13,7 +13,7 @@
 
 .logoLink {
   background-color: var(--mib_charcoal);
-  border-bottom: var(--mib_gold) 2px solid;
+  border-bottom: var(--mib_gold) 5px solid;
 }
 
 .logoLink img {
@@ -29,9 +29,9 @@
   font-family: "Anek Malayalam", sans-serif;
 }
 
-.sideNav a:hover {
+.sideNav a:not(.logoLink):hover {
   color: white;
-  background: var(--mib_charcoal);
+  background: var(--trans_mib_charcoal);
 }
 
 .main {

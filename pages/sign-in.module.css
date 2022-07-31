@@ -1,0 +1,30 @@
+.main {
+  background: var(--mib_blue);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+}
+
+.form {
+  background: #fff;
+  width: 40%;
+  padding: 20px;
+  border: 3px solid var(--mib_charcoal);
+  margin: auto;
+}
+
+.form,
+.form input {
+  border-radius: 25px;
+}
+
+.form button {
+  margin: auto;
+  display: flex;
+}
+
+.imgDiv {
+  margin-bottom: 25px;
+  text-align: center;
+}

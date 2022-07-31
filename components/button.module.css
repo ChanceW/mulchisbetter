@@ -1,0 +1,16 @@
+.button,
+.button:active,
+.button:visited,
+.button:focus {
+  background: var(--mib_gold);
+  color: var(--mib_charcoal);
+  border: 2px solid var(--mib_charcoal);
+  border-radius: 25px;
+  padding: 10px 15px;
+}
+
+.button:hover {
+  background: var(--mib_charcoal);
+  color: var(--mib_gold);
+  border: 2px solid var(--mib_gold);
+}

@@ -8,7 +8,6 @@
   background-color: var(--mib_blue);
   overflow-x: hidden;
   color: var(--mib_charcoal);
-  cursor: pointer;
 }
 
 .logoLink {
@@ -27,11 +26,19 @@
   display: block;
   color: var(--mib_charcoal);
   font-family: "Anek Malayalam", sans-serif;
+  cursor: pointer;
 }
 
 .sideNav a:not(.logoLink):hover {
   color: white;
   background: var(--trans_mib_charcoal);
+}
+
+.sideNav button {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  border-radius: 0 !important;
 }
 
 .main {

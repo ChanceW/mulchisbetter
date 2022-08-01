@@ -1,5 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import { Client, Environment, ApiError } from "square";
+import { getSession } from "next-auth/react";
 
 const getOrders = async () => {
   const client = new Client({
@@ -24,6 +25,10 @@ const getOrders = async () => {
 };
 
 export default async function handler(req, res) {
+  const session = await getSession({ req: req });
+  if (!session) {
+    res.status(401).json({ message: "Not Authorized" });
+  }
   res.status(200).json(await getOrders());
 }
 

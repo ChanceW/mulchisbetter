@@ -8,15 +8,14 @@
 
 .form {
   background: #fff;
-  width: 40%;
-  padding: 20px;
+  padding: 2% 4%;
   border: 3px solid var(--mib_charcoal);
   margin: auto;
 }
 
 .form,
 .form input {
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 .form button {
@@ -27,4 +26,18 @@
 .imgDiv {
   margin-bottom: 25px;
   text-align: center;
+}
+
+.spinnerDiv {
+  margin: 10px 0;
+  visibility: hidden;
+}
+
+.spinnerDiv.loading {
+  visibility: visible;
+}
+
+.spinner {
+  margin-right: 5px;
+  color: var(--mib_gold);
 }

@@ -22,7 +22,7 @@ export default function OrderGrid() {
 
   useEffect(() => {
     getOrders();
-  });
+  }, []);
 
   return (
     <div>

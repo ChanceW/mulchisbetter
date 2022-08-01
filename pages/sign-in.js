@@ -68,9 +68,10 @@ export default function SignIn() {
         <div className={spinnerClasses.join(" ")}>
           {Array(3)
             .fill(null)
-            .map((i) => {
+            .map((i, idx) => {
               return (
                 <div
+                  key={idx}
                   className={
                     classes.spinner + " spinner-border spinner-border-sm"
                   }

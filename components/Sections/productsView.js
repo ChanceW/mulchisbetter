@@ -1,7 +1,7 @@
 import { useReducer } from "react";
 import { Button, Card, CardBody, CardImg, CardTitle } from "reactstrap";
-import { Data } from "../data";
-import { ImgCarouselModal } from "./modal/img-carousel-modal";
+import { Data } from "../../data";
+import { ImgCarouselModal } from "../modal/img-carousel-modal";
 import classes from "./productsView.module.css";
 import { Images, CurrencyDollar } from "react-bootstrap-icons";
 

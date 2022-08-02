@@ -1,0 +1,12 @@
+.main {
+  background-color: var(--mib_brown);
+  position: relative;
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.title {
+  font-size: 65px;
+  margin-bottom: 30spx;
+}

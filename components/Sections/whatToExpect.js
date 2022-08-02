@@ -22,7 +22,7 @@ const expectations = [
 
 export const WhatToExpect = (props) => {
   return (
-    <div id="Expect" className={classes.expect}>
+    <div id="Expect" className={classes.main}>
       <div className={classes.title}>What To Expect</div>
       {expectations.map((ex, idx) => {
         return (

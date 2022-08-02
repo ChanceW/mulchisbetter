@@ -8,5 +8,18 @@
 
 .title {
   font-size: 65px;
-  margin-bottom: 25px;
+  margin-bottom: 30spx;
+}
+
+.expectRow {
+  padding: 0 150px;
+  font-size: x-large;
+  font-weight: 400;
+  margin: 150px 0;
+}
+
+.imgCol svg {
+  color: var(--mib_gold);
+  font-size: 150px;
+  vertical-align: center;
 }

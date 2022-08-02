@@ -26,12 +26,17 @@ export const WhatToExpect = (props) => {
       <div className={classes.title}>What To Expect</div>
       {expectations.map((ex, idx) => {
         return (
-          <div className={`row ${classes.expectRow}`} key={idx}>
-            <div className={`col ${idx % 2 !== 0 ? "order-last" : ""}`}>
-              {ex.text}
+          <>
+            <div className={`row ${classes.expectRow}`} key={idx}>
+              <div
+                className={`col-12 col-lg ${idx % 2 !== 0 ? "order-last" : ""}`}
+              >
+                {ex.text}
+              </div>
+              <div className={`col-12 col-lg ${classes.imgCol}`}>{ex.img}</div>
             </div>
-            <div className={`col ${classes.imgCol}`}>{ex.img}</div>
-          </div>
+            {idx !== expectations.length - 1 && <hr />}
+          </>
         );
       })}
     </div>

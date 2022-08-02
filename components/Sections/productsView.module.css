@@ -7,8 +7,18 @@
 }
 
 .title {
-  font-size: 65px;
+  font-size: 55px;
   margin-bottom: 25px;
+  text-decoration: underline;
+}
+
+.servingLink {
+  margin: 15px 0 15px 0;
+}
+
+.servingLink a:hover {
+  color: var(--mib_gold);
+  text-decoration: underline;
 }
 
 .productList {

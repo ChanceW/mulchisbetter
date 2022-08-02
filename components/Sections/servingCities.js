@@ -1,38 +1,16 @@
 import classes from "./servingCities.module.css";
 import { GeoAlt } from "react-bootstrap-icons";
-
-const location = [
-  {
-    state: "Georgia",
-    cities: [
-      "Buford",
-      "Suwanee",
-      "Duluth",
-      "Lawrenceville",
-      "Alpharetta",
-      "Norcross",
-      "Lilburn",
-      "Snellville",
-      "Gainesville",
-      "Winder",
-      "Roswell",
-      "Loganville",
-      "Doraville",
-      "Tucker",
-      "Dunwoody",
-    ],
-  },
-];
+import { Data } from "../../data";
 
 export const ServingCites = (props) => {
   return (
-    <div id="ServingCities" className={classes.main}>
+    <div id="serving" className={classes.main}>
       <div className={classes.title}>Serving Cities</div>
       <div className={classes.imgDiv}>
         <GeoAlt />
       </div>
       <div className={classes.locations}>
-        {location.map((l, idx) => {
+        {Data.locations.map((l, idx) => {
           return (
             <div key={`state_${idx}`}>
               <div className={classes.state}>{l.state}</div>

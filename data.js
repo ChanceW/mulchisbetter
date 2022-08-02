@@ -49,4 +49,26 @@ export class Data {
       price: 15.0,
     },
   ];
+  static locations = [
+    {
+      state: "Georgia",
+      cities: [
+        "Buford",
+        "Suwanee",
+        "Duluth",
+        "Lawrenceville",
+        "Alpharetta",
+        "Norcross",
+        "Lilburn",
+        "Snellville",
+        "Gainesville",
+        "Winder",
+        "Roswell",
+        "Loganville",
+        "Doraville",
+        "Tucker",
+        "Dunwoody",
+      ],
+    },
+  ];
 }

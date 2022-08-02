@@ -7,8 +7,9 @@
 }
 
 .title {
-  font-size: 65px;
+  font-size: 55px;
   margin-bottom: 30spx;
+  text-decoration: underline;
 }
 
 .expectRow {
@@ -18,8 +19,28 @@
   margin: 150px 0;
 }
 
+.expectRow + hr {
+  height: 5px;
+  color: var(--mib_charcoal);
+  width: 50%;
+  margin: auto;
+  border-radius: 50px;
+}
+
 .imgCol svg {
   color: var(--mib_gold);
   font-size: 150px;
   vertical-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .expectRow {
+    font-size: large;
+    padding: 0 5px;
+    margin: 50px 0;
+  }
+
+  .imgCol svg {
+    margin: 25px auto;
+  }
 }

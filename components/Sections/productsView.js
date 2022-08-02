@@ -3,7 +3,7 @@ import { Button, Card, CardBody, CardImg, CardTitle } from "reactstrap";
 import { Data } from "../../data";
 import { ImgCarouselModal } from "../modal/img-carousel-modal";
 import classes from "./productsView.module.css";
-import { Images, CurrencyDollar } from "react-bootstrap-icons";
+import { Images, CurrencyDollar, GeoAlt } from "react-bootstrap-icons";
 
 const getProduct = (id) => {
   return Data.products.find((p) => p.id === id);
@@ -38,6 +38,12 @@ export const ProductsView = () => {
   return (
     <div id="Products" className={classes.productsView}>
       <div className={classes.title}>Choose Your Color</div>
+      <div className={classes.servingLink}>
+        <a href="#serving">
+          <GeoAlt />
+          <span className="m-1">Check if you are in a serving city</span>
+        </a>
+      </div>
       <div className={`${classes.productList}`}>
         {state.products.map((product) => {
           const purchase = () => {

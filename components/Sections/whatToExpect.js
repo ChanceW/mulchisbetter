@@ -1,5 +1,11 @@
 import classes from "./whatToExpect.module.css";
-import { Receipt, Telephone, Truck, Camera } from "react-bootstrap-icons";
+import {
+  Receipt,
+  Telephone,
+  Truck,
+  Camera,
+  Award,
+} from "react-bootstrap-icons";
 
 const expectations = [
   {
@@ -18,6 +24,10 @@ const expectations = [
     text: "Follow up email/text after delivery- We will let you know the product is delivered with a photo confirmation.",
     img: <Camera />,
   },
+  {
+    text: "Enjoy your award winning landscape.",
+    img: <Award />,
+  },
 ];
 
 export const WhatToExpect = (props) => {
@@ -29,7 +39,9 @@ export const WhatToExpect = (props) => {
           <>
             <div className={`row ${classes.expectRow}`} key={idx}>
               <div
-                className={`col-12 col-lg ${idx % 2 !== 0 ? "order-last" : ""}`}
+                className={`col-12 col-lg ${
+                  idx % 2 !== 0 ? classes.offsetCol : ""
+                } ${classes.expText}`}
               >
                 {ex.text}
               </div>

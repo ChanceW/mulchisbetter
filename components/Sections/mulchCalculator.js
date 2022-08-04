@@ -34,7 +34,7 @@ export const MulchCalculator = () => {
       <div className={classes.imgDiv}>
         <Calculator />
       </div>
-      <div className="my-4 w-50 mx-auto">
+      <div className={classes.gridContainer}>
         <DataGrid
           columns={columns}
           rows={data}

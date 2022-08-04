@@ -43,6 +43,25 @@
   order: 6;
 }
 
+.home,
+.home:active,
+.home:visited,
+.home:focus {
+  color: var(--mib_gold);
+  float: right;
+  margin-right: 25px;
+  border-radius: 15px;
+}
+
+.home svg {
+  font-size: 40px;
+}
+
+.home:hover {
+  background: var(--mib_gold);
+  color: var(--mib_charcoal);
+}
+
 @media only screen and (max-width: 768px) {
   .expectRow {
     font-size: large;
@@ -61,23 +80,4 @@
   .offsetCol {
     order: unset;
   }
-}
-
-.home,
-.home:active,
-.home:visited,
-.home:focus {
-  color: var(--mib_gold);
-  float: right;
-  margin-right: 25px;
-  border-radius: 15px;
-}
-
-.home svg {
-  font-size: 40px;
-}
-
-.home:hover {
-  background: var(--mib_gold);
-  color: var(--mib_charcoal);
 }

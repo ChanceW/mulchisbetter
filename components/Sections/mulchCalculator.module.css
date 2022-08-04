@@ -18,6 +18,11 @@
   font-size: 75px;
 }
 
+.gridContainer {
+  width: 50%;
+  margin: 25px auto;
+}
+
 .home,
 .home:active,
 .home:visited,
@@ -35,4 +40,12 @@
 .home:hover {
   background: #fff;
   color: var(--mib_brown);
+}
+
+@media only screen and (max-width: 768px) {
+  .gridContainer {
+    width: 100%;
+    padding: 0 5px;
+    margin: 10px 0 30px 0;
+  }
 }

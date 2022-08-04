@@ -1,5 +1,5 @@
 import classes from "./servingCities.module.css";
-import { GeoAlt } from "react-bootstrap-icons";
+import { GeoAlt, ArrowBarUp } from "react-bootstrap-icons";
 import { Data } from "../../data";
 
 export const ServingCites = (props) => {
@@ -25,6 +25,9 @@ export const ServingCites = (props) => {
           );
         })}
       </div>
+      <a href="#Products" title="Scroll Up" className={`btn ${classes.home}`}>
+        <ArrowBarUp />
+      </a>
     </div>
   );
 };

@@ -41,7 +41,9 @@ export const ProductsView = () => {
       <div className={classes.servingLink}>
         <a href="#serving">
           <GeoAlt />
-          <span className="m-1">Check if you are in a serving city</span>
+          <span className="m-1">
+            Check to see if you are in our service area.
+          </span>
         </a>
       </div>
       <div className={`${classes.productList}`}>

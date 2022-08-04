@@ -9,7 +9,6 @@
 .title {
   font-size: 55px;
   margin-bottom: 30spx;
-  text-decoration: underline;
 }
 
 .expectRow {
@@ -62,4 +61,23 @@
   .offsetCol {
     order: unset;
   }
+}
+
+.home,
+.home:active,
+.home:visited,
+.home:focus {
+  color: var(--mib_gold);
+  float: right;
+  margin-right: 25px;
+  border-radius: 15px;
+}
+
+.home svg {
+  font-size: 40px;
+}
+
+.home:hover {
+  background: var(--mib_gold);
+  color: var(--mib_charcoal);
 }

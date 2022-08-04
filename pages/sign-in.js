@@ -1,6 +1,6 @@
 import { Form, FormGroup, Label, Input, Button } from "reactstrap";
 import classes from "./sign-in.module.css";
-import buttonClasses from "../components/button.module.css";
+import buttonClasses from "../components/common/button.module.css";
 import Image from "next/image";
 import { signIn } from "next-auth/react";
 import { useState } from "react";

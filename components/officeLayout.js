@@ -1,5 +1,5 @@
 import classes from "./officeLayout.module.css";
-import buttonClasses from "../components/button.module.css";
+import buttonClasses from "../components/common/button.module.css";
 import { Button } from "reactstrap";
 import { BoxArrowLeft } from "react-bootstrap-icons";
 import { useRouter } from "next/dist/client/router";

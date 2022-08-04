@@ -5,6 +5,7 @@ import {
   Truck,
   Camera,
   Award,
+  ArrowBarUp,
 } from "react-bootstrap-icons";
 
 const expectations = [
@@ -51,6 +52,9 @@ export const WhatToExpect = (props) => {
           </>
         );
       })}
+      <a href="#Products" title="Scroll Up" className={`btn ${classes.home}`}>
+        <ArrowBarUp />
+      </a>
     </div>
   );
 };

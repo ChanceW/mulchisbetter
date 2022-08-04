@@ -9,7 +9,6 @@
 .title {
   font-size: 55px;
   margin-bottom: 30spx;
-  text-decoration: underline;
 }
 
 .imgDiv svg {
@@ -23,11 +22,30 @@
 
 .state {
   text-decoration: underline;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
 }
 
 .city {
   margin: 15px;
-  font-size: 25px;
+  font-size: 20px;
+}
+
+.home,
+.home:active,
+.home:visited,
+.home:focus {
+  color: #fff;
+  float: right;
+  margin-right: 25px;
+  border-radius: 15px;
+}
+
+.home svg {
+  font-size: 40px;
+}
+
+.home:hover {
+  background: #fff;
+  color: var(--mib_brown);
 }

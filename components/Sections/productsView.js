@@ -3,7 +3,12 @@ import { Button, Card, CardBody, CardImg, CardTitle } from "reactstrap";
 import { Data } from "../../data";
 import { ImgCarouselModal } from "../modal/img-carousel-modal";
 import classes from "./productsView.module.css";
-import { Images, CurrencyDollar, GeoAlt } from "react-bootstrap-icons";
+import {
+  Images,
+  CurrencyDollar,
+  GeoAlt,
+  Calculator,
+} from "react-bootstrap-icons";
 
 const getProduct = (id) => {
   return Data.products.find((p) => p.id === id);
@@ -44,6 +49,10 @@ export const ProductsView = () => {
           <span className="m-1">
             Check to see if you are in our service area.
           </span>
+        </a>
+        <a href="#calculator" className="d-block my-3">
+          <Calculator />
+          <span className="m-1">How much mulch do you need?</span>
         </a>
       </div>
       <div className={`${classes.productList}`}>

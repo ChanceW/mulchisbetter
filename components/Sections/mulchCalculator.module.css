@@ -1,0 +1,38 @@
+.main {
+  background-image: url("/img/red_mulch.jpg");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  position: relative;
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.title {
+  font-size: 55px;
+  margin-bottom: 30spx;
+}
+
+.imgDiv svg {
+  margin-top: 35px;
+  font-size: 75px;
+}
+
+.home,
+.home:active,
+.home:visited,
+.home:focus {
+  color: #fff;
+  float: right;
+  margin-right: 25px;
+  border-radius: 15px;
+}
+
+.home svg {
+  font-size: 40px;
+}
+
+.home:hover {
+  background: #fff;
+  color: var(--mib_brown);
+}

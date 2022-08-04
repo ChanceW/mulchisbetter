@@ -1,5 +1,5 @@
 .main {
-  background-image: url("/img/red_mulch.jpg");
+  background-image: url("/img/bg_mulch.jpg");
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   position: relative;
@@ -11,16 +11,35 @@
 .title {
   font-size: 55px;
   margin-bottom: 30spx;
+  background: var(--trans_black2);
+  border-radius: 15px;
+  width: fit-content;
+  margin: auto;
+  padding: 5px;
+}
+
+.imgDiv {
+  padding: 5px;
+  background: var(--trans_black2);
+  width: fit-content;
+  margin: 5px auto;
+  border-radius: 15px;
 }
 
 .imgDiv svg {
-  margin-top: 35px;
   font-size: 75px;
 }
 
 .gridContainer {
-  width: 50%;
+  width: 708px;
   margin: 25px auto;
+}
+
+.sqftCell {
+  background: var(--mib_gold);
+  margin-left: -8px;
+  margin-right: -8px;
+  font-weight: bold;
 }
 
 .home,
